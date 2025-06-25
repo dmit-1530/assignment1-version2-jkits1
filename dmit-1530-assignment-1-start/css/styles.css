@@ -88,6 +88,7 @@ article
 {
     vertical-align: text-top;
     max-width: ((100% / 1) - (1rem / 1));
+    padding: 1rem;
 }
 .section3
 {
@@ -202,6 +203,9 @@ footer p
 {
     color: var(--blue-grey-200);
 }
+
+/* media queries */
+
 
 /* medium */
 @media screen and (min-width:640px){
