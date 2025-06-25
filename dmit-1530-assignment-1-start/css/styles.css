@@ -40,6 +40,7 @@ header a:visited, a:link, a:hover, a:active
 p
 {
     text-align: left;
+    font-size: 1.5rem;
 }
 
 ul
@@ -50,8 +51,14 @@ ul
 .section1
 {
     background-color: var(--blue-grey-50);
-    padding: 2rem;
+    padding: 4rem;
     margin-bottom: 2rem;
+    flex-direction: column;
+}
+
+.section1 img
+{
+    width: calc((100 / 1) - (1rem / 1));
 }
 
 .section1 h2
@@ -67,7 +74,10 @@ ul
 {
     text-align: center;
 }
-
+article
+{
+    max-width: ((100% / 1) - (1rem / 1));
+}
 .section3
 {
     background-color: var(--greyish-teal);
@@ -80,10 +90,6 @@ ul
 {
     background-color: var(--blue-grey-100);
     padding:2rem;
-}
-.architect-text
-{
-    text-align: left;
 }
 
 .section5
@@ -113,6 +119,7 @@ ul
     display: flex;
     font-size: 1.5rem;
     width: 75%;
+    flex-direction: column;
 }
 
 button
@@ -136,23 +143,10 @@ footer p
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 65rem;
+    margin: 0 auto;
 }
 
-/*.footer-top {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 3.75rem;
-}
-
-.footer-brand {
-  width: 20.625rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-*/
 .logo-container {
   display: flex;
   align-items: center;
@@ -198,8 +192,16 @@ footer p
     {
         text-align: left;
     }
+    article
+    {
+        max-width: calc((100% / 2) - (1rem / 2));
+        text-align: left;
+    }
 }
 /* Large */
-@media screen and (min-width:840px){
-    
+@media screen and (min-width:1040px){
+    article
+    {
+        max-width: calc((100% / 3) - (1rem / 3));
+    }
 }
